@@ -1,0 +1,13 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+/*.highcharts-range-selector-buttons {
+    visibility: hidden;
+}*/
+
+.coin-chart {margin-bottom: 30px;}
+.crypto-title{text-align: center;}
+/*.nisl-parent-block{width: 800px;}
+.nisl-parent-block .nisl-block {overflow-y: auto;}*/

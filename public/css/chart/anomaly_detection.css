@@ -1,0 +1,70 @@
+/* SCREEN 5 */
+
+.graphdata{
+	display:inline-block;vertical-align: top; width: 34%; margin-left: 40px;
+}
+.graphcontainer{display:inline-block; width: 100%; position: relative; padding-bottom: 60px;height: 560px !important;}
+#graphdiv {width:100% !important; height: 520px !important; position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+.zoom_but{
+	position: absolute;
+	width:100%; text-align: center; margin: 0 auto 50px auto; top: 340px;
+	padding-left: 20px;
+}
+.ingraph_table{padding-top: 430px; }
+.ingraph_table table{font-size: 80% !important;}
+
+div.page div.row-fluid h1.page-title{display: none;}
+
+@media(max-width:1250px){
+.graphdata{width: 35%;}
+/* code comment by NISL */
+/*.graphcontainer{width: 60%;}*/
+.graphcontainer{width: 100%;}
+}
+
+@media(max-width:700px){
+.graphdata{width: 90%; display: none;}
+.graphcontainer{width: 100%; height: 320px !important;}
+#graphdiv{height: 320px !important;}
+	}
+
+.knan_call_cont .known_anomaly_call{background: #fff !important;}
+.knan_input_cont{display: none;}
+.knan_input_cont input{width: 65px; vertical-align: top;}
+.td_high{background: rgba(255, 255, 105, 0.5);}
+.td_high_normal{background: rgba(200, 255, 0, 0.5);}
+
+
+/* SCREEN 6 */
+
+.run_column_1, .run_column_2{ font-size: 0.85em; padding:0 5% 50px; box-sizing: border-box; display: inline-block; vertical-align: top;}
+.run_column_1{width: 30%;  margin-right: 5%; border-right: solid #999 1px}
+.run_column_2{width: 62%; }
+.run_column_1 p, .run_column_2 p{margin-bottom: 0;}
+
+/* SCREEN 2 */
+
+.sc2_form_section{
+	padding: 30px 30px;
+    background: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+
+.sc2_form_section textarea, .sc2_form_section input[type="text"], .sc2_form_section input[type="password"], .sc2_form_section input[type="file"], .sc2_form_section .textInput, .sc2_form_section input[type="submit"], .sc2_form_section input[type="button"], .sc2_form_section input[type="email"], .sc2_form_section select{
+	background: #ffffff;
+
+}
+.sc2_form_section > div{margin-bottom: 10px;}
+.sc2_form_section table{margin: 0px 0 35px 0;}
+
+.form_column{display: inline-block; width: 30%; box-sizing: border-box; vertical-align: top; margin-right: 3%;}
+.sc2_form_section select, .sc2_form_section input[type="email"]{display: block; width: 100%; padding:8px; ; border: 1px solid #e0e0e0; margin-bottom: 4px; background: #ffffff;}
+
+.sc2_form_section select{
+	    height: 30px;
+}
+
+#block_2, #block_3{display: none;}
+
+

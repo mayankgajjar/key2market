@@ -1,0 +1,332 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+html{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+body{
+	padding: 0;
+	margin: 0;
+}
+.H5_loading{
+	z-index: 999999;
+	display: none;
+	background-color: rgba(0,0,0,.2);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	filter: alpha(0);
+	-moz-opacity: 0;
+}
+@-webkit-keyframes fadeIn{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes fadeIn{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-moz-keyframes fadeIn{
+	from{-moz-opacity: 0;}
+	to{-moz-opacity: 1;}
+}
+@-ms-keyframes fadeIn{
+	from{filter:alpha(0);}
+	to{filter:alpha(1);}
+}
+@keyframes fadeOut{
+	from{opacity: 1;}
+	to{opacity: 0;}
+}
+@-webkit-keyframes fadeOut{
+	from{opacity: 1;}
+	to{opacity: 0;}
+}
+@-moz-keyframes fadeOut{
+	from{-moz-opacity: 1;}
+	to{-moz-opacity: 0;}
+}
+@-ms-keyframes fadeOut{
+	from{filter:alpha(1);}
+	to{filter:alpha(0);}
+}
+.H5_loading .H5_loading_process{
+	width: 7rem;
+	height: 7rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -3.5rem;
+	margin-left: -3.5rem;
+	border-radius: 50%;
+}
+.H5_loading .H5_loading_process div{
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	border-radius: 50%;
+	transform: scale(0.5);
+	-webkit-transform: scale(0.5);
+}
+.H5_loading .H5_loading_process div:nth-child(1){
+	top: 0;
+	left: 50%;
+	margin-left: -0.5rem;
+	animation: loading_process 1s 0s infinite;
+	-webkit-animation: loading_process 1s 0s infinite;
+}
+.H5_loading .H5_loading_process div:nth-child(2){
+	top: 25%;
+	right: 25%;
+	margin-right: -1rem;
+	margin-top: -0.75rem;
+	animation: loading_process 1s 0.125s infinite;
+	-webkit-animation: loading_process 1s 0.125s infinite;
+}
+.H5_loading .H5_loading_process div:nth-child(3){
+	top: 50%;
+	right: 0;
+	margin-top: -0.5rem;
+	animation: loading_process 1s 0.25s infinite;
+	-webkit-animation: loading_process 1s 0.25s infinite;
+}
+.H5_loading .H5_loading_process div:nth-child(4){
+	bottom: 25%;
+	right: 25%;
+	margin-right: -1rem;
+	margin-bottom: -0.75rem;
+	animation: loading_process 1s 0.375s infinite;
+	-webkit-animation: loading_process 1s 0.375s infinite;
+}
+.H5_loading .H5_loading_process div:nth-child(5){
+	bottom: 0;
+	left: 50%;
+	margin-left: -0.5rem;
+	animation: loading_process 1s 0.5s infinite;
+	-webkit-animation: loading_process 1s 0.5s infinite;
+}
+.H5_loading .H5_loading_process div:nth-child(6){
+	bottom: 25%;
+	left: 25%;
+	margin-left: -1rem;
+	margin-bottom: -0.75rem;
+	animation: loading_process 1s 0.625s infinite;
+	-webkit-animation: loading_process 1s 0.625s infinite;
+}
+.H5_loading .H5_loading_process div:nth-child(7){
+	bottom: 50%;
+	left: 0;
+	margin-bottom: -0.5rem;
+	animation: loading_process 1s 0.75s infinite;
+	-webkit-animation: loading_process 1s 0.75s infinite;
+}
+.H5_loading .H5_loading_process div:nth-child(8){
+	top: 25%;
+	left: 25%;
+	margin-left: -1rem;
+	margin-top: -0.75rem;
+	animation: loading_process 1s 0.875s infinite;
+	-webkit-animation: loading_process 1s 0.875s infinite;
+}
+
+@keyframes loading_process{
+	87.5% {transform: scale(1.1);}
+	93.75% {transform: scale(1.5);}
+	100% {transform: scale(1.1);}
+}
+@-webkit-keyframes loading_process{
+	87.5% {-webkit-transform: scale(1.1);}
+	93.75% {-webkit-transform: scale(1.5);}
+	100% {-webkit-transform: scale(1.1);}
+}
+.action-form {
+    margin-bottom: 15px;
+    float: right;
+}
+
+#dbtable-table .checkbox {
+  padding-left: 20px; }
+#dbtable-table .checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+    padding-left: 5px; }
+#dbtable-table .checkbox label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 0;
+  margin-left: -20px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+      transition: border 0.15s ease-in-out, color 0.15s ease-in-out; }
+#dbtable-table .checkbox label::after {
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 0;
+  margin-left: -20px;
+  padding-left: 3px;
+  padding-top: 1px;
+  font-size: 11px;
+      color: #555555; }
+#dbtable-table .checkbox input[type="checkbox"],
+#dbtable-table .checkbox input[type="radio"] {
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+#dbtable-table .checkbox input[type="checkbox"]:focus + label::before,
+#dbtable-table .checkbox input[type="radio"]:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+#dbtable-table .checkbox input[type="checkbox"]:checked + label::after,
+#dbtable-table .checkbox input[type="radio"]:checked + label::after {
+  font-family: "FontAwesome";
+  content: "\f00c";}
+#dbtable-table .checkbox input[type="checkbox"]:indeterminate + label::after,
+#dbtable-table .checkbox input[type="radio"]:indeterminate + label::after {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 3px;
+  background-color: #555555;
+  border-radius: 2px;
+  margin-left: -16.5px;
+  margin-top: 7px;
+}
+#dbtable-table .checkbox input[type="checkbox"]:disabled,
+#dbtable-table .checkbox input[type="radio"]:disabled {
+    cursor: not-allowed;
+}
+#dbtable-table .checkbox input[type="checkbox"]:disabled + label,
+#dbtable-table .checkbox input[type="radio"]:disabled + label {
+      opacity: 0.65; }
+#dbtable-table .checkbox input[type="checkbox"]:disabled + label::before,
+#dbtable-table .checkbox input[type="radio"]:disabled + label::before {
+  background-color: #eeeeee;
+        cursor: not-allowed; }
+#dbtable-table .checkbox.checkbox-circle label::before {
+    border-radius: 50%; }
+#dbtable-table .checkbox.checkbox-inline {
+    margin-top: 0; }
+
+#dbtable-table .checkbox-primary input[type="checkbox"]:checked + label::before,
+#dbtable-table .checkbox-primary input[type="radio"]:checked + label::before {
+  background-color: #337ab7;
+  border-color: #337ab7; }
+#dbtable-table .checkbox-primary input[type="checkbox"]:checked + label::after,
+#dbtable-table .checkbox-primary input[type="radio"]:checked + label::after {
+  color: #fff; }
+
+#dbtable-table .checkbox-danger input[type="checkbox"]:checked + label::before,
+#dbtable-table .checkbox-danger input[type="radio"]:checked + label::before {
+  background-color: #d9534f;
+  border-color: #d9534f; }
+#dbtable-table .checkbox-danger input[type="checkbox"]:checked + label::after,
+#dbtable-table .checkbox-danger input[type="radio"]:checked + label::after {
+  color: #fff; }
+
+#dbtable-table .checkbox-info input[type="checkbox"]:checked + label::before,
+#dbtable-table .checkbox-info input[type="radio"]:checked + label::before {
+  background-color: #5bc0de;
+  border-color: #5bc0de; }
+#dbtable-table .checkbox-info input[type="checkbox"]:checked + label::after,
+#dbtable-table .checkbox-info input[type="radio"]:checked + label::after {
+  color: #fff; }
+
+#dbtable-table .checkbox-warning input[type="checkbox"]:checked + label::before,
+#dbtable-table .checkbox-warning input[type="radio"]:checked + label::before {
+  background-color: #f0ad4e;
+  border-color: #f0ad4e; }
+#dbtable-table .checkbox-warning input[type="checkbox"]:checked + label::after,
+#dbtable-table .checkbox-warning input[type="radio"]:checked + label::after {
+  color: #fff; }
+
+#dbtable-table .checkbox-success input[type="checkbox"]:checked + label::before,
+#dbtable-table .checkbox-success input[type="radio"]:checked + label::before {
+  background-color: #5cb85c;
+  border-color: #5cb85c; }
+#dbtable-table .checkbox-success input[type="checkbox"]:checked + label::after,
+#dbtable-table .checkbox-success input[type="radio"]:checked + label::after {
+  color: #fff;}
+
+#dbtable-table .checkbox-primary input[type="checkbox"]:indeterminate + label::before,
+#dbtable-table .checkbox-primary input[type="radio"]:indeterminate + label::before {
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+#dbtable-table .checkbox-primary input[type="checkbox"]:indeterminate + label::after,
+#dbtable-table .checkbox-primary input[type="radio"]:indeterminate + label::after {
+  background-color: #fff;
+}
+
+#dbtable-table .checkbox-danger input[type="checkbox"]:indeterminate + label::before,
+#dbtable-table .checkbox-danger input[type="radio"]:indeterminate + label::before {
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+
+#dbtable-table .checkbox-danger input[type="checkbox"]:indeterminate + label::after,
+#dbtable-table .checkbox-danger input[type="radio"]:indeterminate + label::after {
+  background-color: #fff;
+}
+
+#dbtable-table .checkbox-info input[type="checkbox"]:indeterminate + label::before,
+#dbtable-table .checkbox-info input[type="radio"]:indeterminate + label::before {
+  background-color: #5bc0de;
+  border-color: #5bc0de;
+}
+
+#dbtable-table .checkbox-info input[type="checkbox"]:indeterminate + label::after,
+#dbtable-table .checkbox-info input[type="radio"]:indeterminate + label::after {
+  background-color: #fff;
+}
+
+#dbtable-table .checkbox-warning input[type="checkbox"]:indeterminate + label::before,
+#dbtable-table .checkbox-warning input[type="radio"]:indeterminate + label::before {
+  background-color: #f0ad4e;
+  border-color: #f0ad4e;
+}
+
+#dbtable-table .checkbox-warning input[type="checkbox"]:indeterminate + label::after,
+#dbtable-table .checkbox-warning input[type="radio"]:indeterminate + label::after {
+  background-color: #fff;
+}
+
+#dbtable-table .checkbox-success input[type="checkbox"]:indeterminate + label::before,
+#dbtable-table .checkbox-success input[type="radio"]:indeterminate + label::before {
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
+
+#dbtable-table .checkbox-success input[type="checkbox"]:indeterminate + label::after,
+#dbtable-table .checkbox-success input[type="radio"]:indeterminate + label::after {
+  background-color: #fff;
+}
+
+
+
+#dbtable-table input[type="checkbox"].styled:checked + label:after,
+#dbtable-table input[type="radio"].styled:checked + label:after {
+  font-family: 'FontAwesome';
+  content: "\f00c"; }
+#dbtable-table input[type="checkbox"] .styled:checked + label::before,
+#dbtable-table input[type="radio"] .styled:checked + label::before {
+  color: #fff; }
+#dbtable-table input[type="checkbox"] .styled:checked + label::after,
+#dbtable-table input[type="radio"] .styled:checked + label::after {
+  color: #fff; }
+

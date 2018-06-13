@@ -1,0 +1,21 @@
+
+/* HOMEPAGE CUSTOMIZATIONS */
+
+.grayscale_images img, .grayscale_images .vc_gitem-zone {
+	filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+.grayscale_images .vc_gitem-zone{
+	background-size: 100% auto !important;
+}
+
+.boxed .masthead-container, .full-width .masthead-container{
+	padding: 0 0 5px 0 !important;
+}
+
+.site-title{
+	padding-top: 12px;
+	margin-bottom: -10px !important;
+}
